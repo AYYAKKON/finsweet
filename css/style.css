@@ -1,0 +1,1101 @@
+/* Google Font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+
+
+/* Base */
+*,
+::before,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* CUSTOM CSS CLASSES */
+
+/* LAYOUT */
+.bd_grid {
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 85%;
+  grid-column-gap: 2rem;
+  width: calc(100% - 5.5rem);
+  margin-left: 10px;
+  margin-right:10px;
+  padding: 20px;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.5);
+
+}
+
+/* Navbar */
+.nav {
+  height:30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .nav_menu {
+    position: fixed;
+    top: 50px;
+    right: -100%;
+    width: 80%;
+    height: 450px;
+    padding: 2rem;
+    background-color: blue;
+    transition: .600s;
+  }
+  .header{
+    height: 50px;
+  }
+  .nav_items{
+    margin-left: 10%;
+    justify-content: space-between;
+    padding: 20px;
+  }
+}
+
+
+.nav_link {
+  position: relative;
+  margin-left: 60px;
+  color: #fff;
+}
+
+.nav_link:hover {
+  position: relative;
+  color: blue;
+}
+
+.nav_link:hover::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.18rem;
+  left: 0;
+  top: 2rem;
+  background-color: blue;
+}
+
+.nav_logo {
+margin-left: -100px;
+  padding: 5px;
+  color: black;
+}
+
+.nav_toggle {
+  color:blue;
+  font-size: 1.5rem;
+  cursor: pointer;
+  
+  margin-top: 20px;
+  
+}
+
+/* ACTIVE MENU */
+
+
+.show {
+  right: 0;
+}
+
+.nav_btn{
+    color: white;
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+/* what we do */
+
+.worldwide{
+    width: 100%;
+}
+.worldwide .line{
+    margin-top: 150px;
+    margin-left: 80px;
+}
+.worldwide h6{
+    margin-left: 160px;
+    margin-top: -17px;
+    font-size: 20px;
+}
+
+
+.worldwide h1{
+    margin-left: 160px;
+    margin-top: 70px;
+}
+
+.worldwide p{
+    margin-left: 160px;
+    width: 500px;
+    
+}
+.worldwide .dust{
+    margin-left: 800px;
+    margin-top: -300px;
+    
+}
+
+
+
+/* Environment */
+.environment {
+ 
+    display: flex;
+    margin-right: 80px;
+}
+
+/* 1ST ICON */
+.environment h1{
+    margin-left: 80px;
+    margin-top: 100px;
+    width: 140%;
+}
+
+.environment1 {
+
+    margin-top: 300px;
+    margin-left: -500px;
+}
+
+.environment1 .build1 img{
+margin-left: -120px;
+    float: left;
+}   
+.environment1 .build1 h4{
+    margin-left: -70px;
+}
+.environment1 .build1 P{
+    width: 300px;
+    margin-left: -70px;
+}
+
+
+
+/* 2nd ICON */
+
+.environment2 {
+    margin-top: 300px;
+    margin-left: 40px;
+}
+
+.environment2 .build2 img{
+    
+    float: left;
+}   
+.environment2 .build2 h4{
+    margin-left: 50px;
+}
+.environment2 .build2 P{
+    width: 300px;
+    margin-left: 50PX;
+}
+
+
+
+
+/* 3rd ICON */
+
+.environment3 {
+    margin-top: 300px;
+    margin-left: 40px;
+}
+
+.environment3 .build3 img{
+    
+    float: left;
+}   
+.environment3 .build3 h4{
+    margin-left: 50px;
+}
+.environment3 .build3 P{
+    margin-left: 50PX;
+    width: 300px;
+}
+
+
+
+/* Project we have done */
+
+.project h5{
+    text-align: center;
+    margin-top: 200px;
+    font-size: 15px;
+}
+
+.project h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+
+/* every one after 3 images */
+
+.trees{
+    display: flex ;
+    margin-top: 100px;
+}
+
+/* mission  use div */
+.trees .mission img{
+    width: 350px;
+    height: 350px;
+    margin-left: 80px;
+    mix-blend-mode:overlay;
+
+}
+
+.trees .mission h4{
+    color: #fff;
+    margin-top: -300px;
+    margin-left: 110px;
+}
+.trees .mission p{
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 110px;
+    
+}
+
+
+.trees .mission button{
+    color: black;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 110px;
+    padding: 10px 10px;
+    border: none;
+    
+}
+
+/* use weekly div */
+
+.trees .weekly img{
+    width: 350px;
+    height: 350px;
+    margin-left: 70px;
+
+}
+
+
+.trees .weekly h4{
+    color:white;
+    margin-top: -300px;
+    margin-left: 110px;
+}
+.trees .weekly p{
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 110px;
+    
+}
+
+
+.trees .weekly button{
+    color: black;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 110px;
+    padding: 10px 10px;
+    border: none;
+    
+}
+
+
+/* use wildlife div */
+.trees .wildlife img{
+    width: 350px;
+    height: 350px;
+    margin-left: 70px;
+}
+
+
+.trees .wildlife h4{
+    color:white;
+    margin-top: -300px;
+    margin-left: 110px;
+}
+.trees .wildlife p{
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 110px;
+    
+}
+
+
+.trees .wildlife button{
+    color: black;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 110px;
+    padding: 10px 10px;
+    border: none;
+    
+}
+
+
+/* greener image */
+
+.greener img{
+    margin-top: 200px;
+    width: 90%;
+    margin-left: 80px;
+}
+
+
+.greener h3{
+    text-align: center;
+    font-weight: bold;
+    margin-top: -250px;
+    font-size: 29px;
+    color: white;
+}
+.greener .bt1{
+    margin-left: 570px;
+    margin-top: 30px;
+    padding: 10px;
+    color: white;
+    background: #70C174;
+    border: none;
+    font-weight: bold;
+
+}
+
+
+.greener .bt2{
+    margin-left: 20px;
+    margin-top: 30px;
+    padding: 10px;
+    color: black;
+    background: white;
+    border: none;
+    width: 80px;
+    font-weight: bold;
+
+}
+
+
+/* Reed our news */
+
+.news{
+    display: flex;
+
+    margin-right: 50px;
+    margin-left:80px ;
+    
+}
+.news h1{
+    margin-left: 10px;
+    margin-top: 250px;
+    width: 100%;
+    
+}
+
+
+/* img 1 */
+.news .im1{
+    margin-top: 400px;
+    margin-left: -1140px;
+    width: 300px;
+}
+/* img 2 */
+.news .im2{
+    margin-top: 400px;
+    margin-left: 20px;
+    width: 300px;
+}
+
+/* img 3 */
+.news .im3{
+    margin-top: 400px;
+    margin-left: 20px;
+    width: 300px;
+}
+
+
+/* img 4 */
+.news .im4{
+    margin-top: 400px;
+    margin-left: 20px;
+    width: 300px;
+}
+
+
+/* Our event page */
+
+.event{
+    display: flex;
+}
+.event h2{
+    margin-left: 80px;
+    margin-top: 100px;
+}
+/* img 1 condents */
+.event .img1{
+    margin-left: -140px;
+    margin-top: 200px;
+    width: 590px;
+}
+
+
+.event .img1 h1{
+    margin-top: -160px;
+    margin-left: 25px;
+}
+
+.event .img1 p{
+    margin-left: 25px;
+}
+
+.event .img1 h6{
+    margin-top: -60px;
+    margin-left: 95px;
+}
+
+.event .img1 .line{
+    margin-top: -10px;
+    margin-left: 165px;
+}
+
+.event .img1 h3{
+    margin-left: 95px;
+    margin-top: 20px;
+}
+.event .img1 .arrow{
+    margin-left: 450px;
+    margin-top: -50px;
+}
+
+
+
+/* img 2 condents */
+
+.event .img2{
+    margin-left: 50px;
+    margin-top: 200px;
+    width: 590px;
+}
+
+
+.event .img2 h1{
+    margin-top: -160px;
+    margin-left: 25px;
+}
+
+.event .img2 p{
+    margin-left: 25px;
+}
+
+.event .img2 h6{
+    margin-top: -60px;
+    margin-left: 95px;
+}
+
+.event .img2 .line{
+    margin-top: -10px;
+    margin-left: 165px;
+}
+
+.event .img2 h3{
+    margin-left: 95px;
+    margin-top: 20px;
+}
+.event .img2 .arrow{
+    margin-left: 450px;
+    margin-top: -20px;
+}
+
+
+/* footer section */
+
+
+footer{
+    height: 550px;
+    color: white;
+    background-color: black;
+    margin-top: 100px;
+    display: flex;
+}
+
+footer .foot{
+    margin-left: 50px;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.foot1{
+    margin-top: 85px;
+    margin-left: 60px;
+}
+.foot2{
+    margin-top: 140px;
+    margin-left: 100px;
+}
+.foot2 input{
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+}
+.foot2 button{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+
+/* responsive part */
+
+
+/* max 1024 */
+
+@media screen and (max-width: 1025px) {
+
+  .header{
+    width: 100%;
+  }
+.header .nav{
+  margin-left: 0px;
+}
+.header .nav_logo{
+  margin-left: 50px;
+}
+
+  
+/* WHAT WE DO */
+.worldwide .line{
+  margin-top: 110px;
+  margin-left: 20px;
+}
+.worldwide h6{
+  margin-left: 110px;
+
+}
+.worldwide h1{
+  margin-top: 50px;
+  margin-left: 30px;
+  font-size: 25px;
+}
+.worldwide p{
+  margin-left: 30px;
+  width: 400px;
+  margin-right: 30px;
+}
+.worldwide .dust{
+  margin-left: 30px;
+  width: 420px;
+  height: 400px;
+  margin-top: 80px;
+  margin-right: 30px;
+}
+
+/* environment */
+
+.environment{
+  display:list-item;
+}
+.environment h1{
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.environment1 .build1 {
+  margin-left: 30px;
+  margin-top: -650px;
+}
+.environment3 .build3 {
+  margin-top: -200px;
+}
+
+/* every one after 3 imagge  */
+
+.trees{
+  display:block;
+
+}
+
+.trees .mission img{
+  width: 400px;
+}
+
+.trees .mission{
+  margin-bottom: 150px;
+  margin-left: -40px;
+  margin-right: 30px;
+  
+}
+
+
+.trees .weekly img{
+  width: 400px;
+}
+
+.trees .weekly{
+  margin-bottom: 150px;
+  margin-left: -30px;
+  margin-right: 30px;
+  
+}
+
+
+
+.trees .wildlife img{
+  width: 400px;
+}
+
+.trees .wildlife{
+  margin-bottom: 150px;
+  margin-left: -30px;
+  margin-right: 30px;
+  
+}
+
+/* greemer image */
+
+.greener img{
+  width:420px;
+  height: 200px;
+  margin-left: 30px;
+}
+
+.greener h3{
+  font-size: 20px;
+  margin-top: -180px;
+}
+
+.greener .bt1{
+  margin-left:120px;
+}
+
+
+/* reed our news  */
+
+.news{
+  display: block;
+}
+
+.news h1{
+  margin-left: -40px;
+}
+.news .im1{
+  margin-top: -250px;
+}
+.news .im2{
+  margin-top: 50px;
+}
+
+.news .im3{
+  margin-top: 50px;
+}
+
+.news .im4{
+  margin-top: 50px;
+}
+
+/* event page  */
+
+.event{
+  display: block;
+}
+.event h2{
+  margin-left: 30px;
+}
+
+.event .img1 {
+  width: 400px;
+  margin-left: 30px;
+  margin-top: 50px;
+
+}
+
+.event .img1 h1{
+  margin-left: 30px;
+  margin-top: -115px;
+}
+.event .img1 .arrow{
+  margin-left: 290px;
+  height: 30px;
+margin-top: -28px;
+}
+/* 2 */
+.event .img2 {
+  width: 400px;
+  margin-left: 30px;
+  margin-top: 50px;
+}
+
+.event .img2 h1{
+  margin-left: 30px;
+  margin-top: -115px;
+}
+.event .img2 .arrow{
+  margin-left: 290px;
+  height: 30px;
+margin-top: 6px;
+}
+
+/* footer */
+footer{
+  height: 900px;
+  width: 550px;
+display: block;
+}
+footer .foot{
+  font-size: 16px;
+ margin-left: 10px;
+}
+footer .foot1{
+  margin-top: 20px;
+
+  float: left;
+}
+footer .foot2{
+
+margin-left: 20px;
+margin-top: 500px;
+
+}
+
+footer .foot2 h1{
+  padding: 30px;
+}
+footer .foot2 input{
+  width: 300px;
+  margin-left: 30px;
+
+}
+
+
+
+
+}
+
+
+/* max 480 */
+
+@media  screen and (max-width:480px) {
+
+  /* NAV BAR */
+
+  .nav_logo{
+  margin-left: 10px;
+
+}
+
+
+/* WHAT WE DO */
+.worldwide .line{
+  margin-top: 110px;
+  margin-left: 20px;
+}
+.worldwide h6{
+  margin-left: 110px;
+
+}
+.worldwide h1{
+  margin-top: 50px;
+  margin-left: 30px;
+  font-size: 25px;
+}
+.worldwide p{
+  margin-left: 30px;
+  width: 400px;
+  margin-right: 30px;
+}
+.worldwide .dust{
+  margin-left: 30px;
+  width: 420px;
+  height: 400px;
+  margin-top: 80px;
+  margin-right: 30px;
+}
+
+/* environment */
+
+.environment{
+  display:list-item;
+}
+.environment h1{
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.environment1 .build1 {
+  margin-left: 30px;
+  margin-top: -650px;
+}
+.environment3 .build3 {
+  margin-top: -200px;
+}
+
+/* every one after 3 imagge  */
+
+.trees{
+  display:block;
+
+}
+
+.trees .mission img{
+  width: 400px;
+}
+
+.trees .mission{
+  margin-bottom: 150px;
+  margin-left: -40px;
+  margin-right: 30px;
+  
+}
+
+
+.trees .weekly img{
+  width: 400px;
+}
+
+.trees .weekly{
+  margin-bottom: 150px;
+  margin-left: -30px;
+  margin-right: 30px;
+  
+}
+
+
+
+.trees .wildlife img{
+  width: 400px;
+}
+
+.trees .wildlife{
+  margin-bottom: 150px;
+  margin-left: -30px;
+  margin-right: 30px;
+  
+}
+
+/* greemer image */
+
+.greener img{
+  width:420px;
+  height: 200px;
+  margin-left: 30px;
+}
+
+.greener h3{
+  font-size: 20px;
+  margin-top: -180px;
+}
+
+.greener .bt1{
+  margin-left:120px;
+}
+
+
+/* reed our news  */
+
+.news{
+  display: block;
+}
+
+.news h1{
+  margin-left: -40px;
+}
+.news .im1{
+  margin-top: -250px;
+}
+.news .im2{
+  margin-top: 50px;
+}
+
+.news .im3{
+  margin-top: 50px;
+}
+
+.news .im4{
+  margin-top: 50px;
+}
+
+/* event page  */
+
+.event{
+  display: block;
+}
+.event h2{
+  margin-left: 30px;
+}
+
+.event .img1 {
+  width: 400px;
+  margin-left: 30px;
+  margin-top: 50px;
+
+}
+
+.event .img1 h1{
+  margin-left: 30px;
+  margin-top: -115px;
+}
+.event .img1 .arrow{
+  margin-left: 290px;
+  height: 30px;
+margin-top: -28px;
+}
+/* 2 */
+.event .img2 {
+  width: 400px;
+  margin-left: 30px;
+  margin-top: 50px;
+}
+
+.event .img2 h1{
+  margin-left: 30px;
+  margin-top: -115px;
+}
+.event .img2 .arrow{
+  margin-left: 290px;
+  height: 30px;
+margin-top: 6px;
+}
+
+/* footer */
+footer{
+  height: 900px;
+  width: 550px;
+display: block;
+}
+footer .foot{
+  font-size: 16px;
+ margin-left: 10px;
+}
+footer .foot1{
+  margin-top: 20px;
+
+  float: left;
+}
+footer .foot2{
+
+margin-left: 20px;
+margin-top: 500px;
+
+}
+
+footer .foot2 h1{
+  padding: 30px;
+}
+footer .foot2 input{
+  width: 300px;
+  margin-left: 30px;
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+
+  .section {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+  }
+  .section-title {
+    margin-bottom: var(--mb-6);
+  }
+
+  .section-title::after {
+    width: 80px;
+    top: 3rem;
+  }
+
+  .nav {
+    height: calc(var(--header-height) + 1rem);
+  }
+
+  .nav_items {
+    margin-left: var(--mb-6);
+    margin-bottom: 0;
+  }
+
+  .nav_list {
+    display: flex;
+    padding-top: 0;
+  }
+
+  .nav_toggle {
+    display: none;
+  }
+
+  .nav_link {
+    color: var(--second-color);
+  }
+
+
+}
+
+
+@media screen and (min-width: 1024px) {
+  .bd_grid {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+}
